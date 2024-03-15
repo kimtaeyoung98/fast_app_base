@@ -1,6 +1,7 @@
 import 'package:fast_app_base/common/common.dart';
 import 'package:fast_app_base/common/widget/w_image_button.dart';
 import 'package:fast_app_base/screen/main/tab/stock/search/f_search_stock.dart';
+import 'package:fast_app_base/screen/main/tab/stock/setting/s_setting.dart';
 import 'package:fast_app_base/screen/main/tab/stock/tab/f_my_stock.dart';
 import 'package:fast_app_base/screen/main/tab/stock/tab/f_todays_discovery.dart';
 import 'package:flutter/material.dart';
@@ -37,7 +38,7 @@ class _StockFragmentState extends State<StockFragment>
                 imagePath: '$basePath/icon/stock_calendar.png'),
             ImageButton(
                 onTap: () {
-                  context.showSnackbar('설정');
+                  Nav.push(const SettingScreen());
                 },
                 imagePath: '$basePath/icon/stock_settings.png')
           ],
